@@ -37,10 +37,13 @@ public class PlayerMoments : MonoBehaviour
             }
         }
     }
-
     private void FixedUpdate()
     {
         rb.AddForce(moveInput * moveSpeed);
+    }
+    void OnFire()
+    {
+        animator.SetTrigger("swordAttack");
     }
     // Start is called before the first frame update
     void Start()

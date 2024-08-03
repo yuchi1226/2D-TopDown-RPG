@@ -27,6 +27,19 @@ public class OrcMovement : MonoBehaviour
             if (direction.magnitude <= detectionZone.viewRadius)
             {
                 rb.AddForce(direction.normalized * speed);
+                if (direction.x > 0)//面向右邊
+                {
+                    spriteRenderer.flipX = false;
+                }
+                if (direction.x < 0)//面向左邊
+                {
+                    spriteRenderer.flipX = true;
+                }
+                OnWalk();
+            }
+            else
+            {
+                OnWalkStop();
             }
         }
     }
