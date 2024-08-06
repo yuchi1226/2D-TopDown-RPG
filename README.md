@@ -32,5 +32,5 @@
 * 預製體製作(多重複使用，例如:敵人、砲台...etc)
 
 ## 參考資料 -- BV1Xj411r7Mm
-* Animator怎么删除箭头:https://developer.unity.cn/ask/question/60190ca9edbc2a001ffbebd7
+* Animator怎麼刪除箭頭:https://developer.unity.cn/ask/question/60190ca9edbc2a001ffbebd7
 * animation Loop Time選項關閉:https://discussions.unity.com/t/animation-loop/34663
