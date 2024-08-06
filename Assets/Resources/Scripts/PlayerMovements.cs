@@ -30,10 +30,12 @@ public class PlayerMoments : MonoBehaviour
             if (moveInput.x > 0)
             {
                 spriteRenderer.flipX = false;
+                gameObject.BroadcastMessage("IsFacingRight", true);
             }
             if (moveInput.x < 0)
             {
                 spriteRenderer.flipX = true;
+                gameObject.BroadcastMessage("IsFacingRight", false);
             }
         }
     }
@@ -45,6 +47,20 @@ public class PlayerMoments : MonoBehaviour
     {
         animator.SetTrigger("swordAttack");
     }
+    void OnDamage()
+    {
+        //animator.SetTrigger("isDamage");
+    }
+    void OnDie()
+    {
+        animator.SetTrigger("isDead");
+    }
+    #region Animation Method
+    private void OnDestroy()
+    {
+        Destroy(gameObject);
+    }
+    #endregion
     // Start is called before the first frame update
     void Start()
     {

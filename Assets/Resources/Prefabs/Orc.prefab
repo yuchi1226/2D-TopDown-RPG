@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 3508033352095690239}
   - component: {fileID: 7679936957666681335}
   - component: {fileID: 2953175620959970507}
+  - component: {fileID: 7563486350729575463}
+  - component: {fileID: 2057528973796831412}
   m_Layer: 0
   m_Name: Orc
   m_TagString: Untagged
@@ -79,7 +81,7 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 5717584393450056696, guid: d3df8c8b3a27b8b44a8117d2f0e38800, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
+  m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 1, y: 1}
@@ -101,7 +103,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 5
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -114,7 +116,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &3508033352095690239
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -194,7 +196,35 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   detectedObjs: {fileID: 0}
-  viewRadius: 0
+  viewRadius: 10
   playerLayerMask:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 64
+--- !u!114 &7563486350729575463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072070729493189231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdfb52a35877f524eb48d60e3e34f9c5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 30
+--- !u!114 &2057528973796831412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7072070729493189231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a61080e0e9f53b49be0ebe04a8a1a06, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 30
+  knockbackForce: 100
+  attactPower: 1

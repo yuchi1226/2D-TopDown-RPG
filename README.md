@@ -20,8 +20,17 @@
 - [x] 敵人行走動畫 
 - [x] 主角攻擊動畫切換條件 
 - [x] 主角攻擊動畫相關腳本
+- [x] 主角攻擊效果實現（添加攻擊碰撞體）
+- [x] 主角攻擊後，彈開敵人的效果
+- [x] 敵人受傷和死亡動畫切換條件
+- [x] 主角受傷和死亡（含動畫部分）
+- [x] 傷害漂浮字體功能
 
 ---
 ## 注意事項
 * .gitignore可選擇unity，有預設的設定判斷上傳的資料
 * 預製體製作(多重複使用，例如:敵人、砲台...etc)
+
+## 參考資料 -- BV1Xj411r7Mm
+* Animator怎么删除箭头:https://developer.unity.cn/ask/question/60190ca9edbc2a001ffbebd7
+* animation Loop Time選項關閉:https://discussions.unity.com/t/animation-loop/34663

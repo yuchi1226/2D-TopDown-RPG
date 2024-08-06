@@ -11,6 +11,8 @@ public class OrcMovement : MonoBehaviour
     Animator animator;
 
     public float speed;
+    public float knockbackForce;
+    public int attactPower;
 
     private void Awake()
     {
@@ -43,7 +45,18 @@ public class OrcMovement : MonoBehaviour
             }
         }
     }
-
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Collider2D collider = collision.collider;
+        iDamageable damageable = collider.GetComponent<iDamageable>();
+        if (damageable != null && collider.tag == "Player")
+        {
+            Vector2 direction = collider.transform.position - transform.position;
+            Vector2 force = direction.normalized * knockbackForce;
+            
+            damageable.OnHit(attactPower, force);//´î¥hªº¦å¶q
+        }
+    }
     public void OnWalk()
     {
         animator.SetBool("isWalking", true);
@@ -51,6 +64,14 @@ public class OrcMovement : MonoBehaviour
     public void OnWalkStop()
     {
         animator.SetBool("isWalking", false);
+    }
+    void OnDamage()
+    {
+        animator.SetTrigger("isDamage");
+    }
+    void OnDie()
+    {
+        animator.SetTrigger("isDead");
     }
     // Start is called before the first frame update
     void Start()
