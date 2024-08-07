@@ -1,6 +1,6 @@
 # 2D-TopDown-RPG
 
-![image]("D:\2D-TopDown-RPG\2024-08-07 215500.png")
+![image]("https://github.com/yuchi1226/2D-TopDown-RPG/blob/main/IMG/2024-08-07%20215500.png")
 
 ## 項目準備工作
 - [x] 建立專案 
