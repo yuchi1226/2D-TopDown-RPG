@@ -1,5 +1,7 @@
 # 2D-TopDown-RPG
 
+![image]("D:\2D-TopDown-RPG\2024-08-07 215500.png")
+
 ## 項目準備工作
 - [x] 建立專案 
 - [x] 導入美術資源 (unity assets store內的免費資源包)
