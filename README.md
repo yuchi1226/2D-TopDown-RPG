@@ -33,7 +33,7 @@
 * .gitignore可選擇unity，有預設的設定判斷上傳的資料
 * 預製體製作(多重複使用，例如:敵人、砲台...etc)
 
-## 參考資料 -- BV1Xj411r7Mm
+<!-- ## 參考資料 -- BV1Xj411r7Mm
 * Animator怎麼刪除箭頭:https://developer.unity.cn/ask/question/60190ca9edbc2a001ffbebd7
 * animation Loop Time選項關閉:https://discussions.unity.com/t/animation-loop/34663
-* GitHub如何在README.md檔案中插入圖片:https://blog.csdn.net/weixin_42350212/article/details/81285210
+* GitHub如何在README.md檔案中插入圖片:https://blog.csdn.net/weixin_42350212/article/details/81285210 -->
